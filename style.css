@@ -8,10 +8,10 @@ p {
 	color: #4087ad;
     font-family: 'BioRhyme Expanded', serif;
   text-align:center;
-.italic
-	 font-weight: bold;
-
- }
+}
+.italic {
+     font-weight: bold;
+}
 
 
 h1 {
