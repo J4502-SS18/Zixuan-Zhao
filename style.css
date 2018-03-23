@@ -31,8 +31,8 @@ body{
 
 .navigation{  padding: 0;
 	list-style-type: none;
-	display: flex;
-	 flex-flow: column;
+  display: flex;
+	flex-flow: column;
 }
 
 .navigation li {
@@ -63,7 +63,7 @@ body{
 
 
 
-img {
+.image {
 	border: none;
 text-align:center;
 }
@@ -71,6 +71,11 @@ text-align:center;
 .wrapper{
   display: flex;
   flex-flow: column wrap;
+}
+.navigation{
+	display: flex;
+	flex-flow: column;
+
 }
 
 /* When greater than 800px wide */
@@ -81,12 +86,20 @@ text-align:center;
        justify-content: space-around;
        flex-flow: row;
        background-color: #FFCCCC;
+
    }
 
-	 .image {
-  display: flex;
-    flex-direction: row;
-  flex:1 auto;
-  order: 2;
+	 
 
+
+	 .image {
+          width: 45%
+          float: left;
+          margin-right: 10px;
+					display: flex;
+					flex-flow: row;
+					flex-wrap: wrap;
+}
+.first {
+	    magin-top: 0;
 }
