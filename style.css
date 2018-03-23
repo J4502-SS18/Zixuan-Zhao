@@ -29,19 +29,20 @@ body{
     margin: 0 auto;
 }
 
-#nav {
-    padding: 0;
+.navigation{  padding: 0;
 	list-style-type: none;
+	display: flex;
+	 flex-flow: column;
 }
 
-#nav li {
+.navigation li {
     margin: 0;
     padding: 0;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
 }
 
-#nav a:link, a:visited {
+.navigation a:link, a:visited {
 	display:block;
     color: #E8CCFF;
     background-color: #4087ad;
@@ -52,9 +53,12 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
-#nav a:hover, a:active {
+.navigation a:hover, a:active {
     background-color: #FFCCCC;
+
 }
+
+
 
 
 
@@ -63,3 +67,18 @@ img {
 	border: none;
 text-align:center;
 }
+/*Setting up flexible boxes for our content*/
+.wrapper{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* When greater than 800px wide */
+
+	 .navigation {
+     display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+       flex-flow: row;
+       background-color: #FFCCCC;
+   }
