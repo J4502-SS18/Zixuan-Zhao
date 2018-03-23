@@ -63,7 +63,7 @@ body{
 
 
 
-.image {
+img {
 	border: none;
 text-align:center;
 }
@@ -85,21 +85,22 @@ text-align:center;
        flex-flow: row wrap;
        justify-content: space-around;
        flex-flow: row;
-       background-color: #FFCCCC;
+       background-color: #4087ad;
 
    }
+	 .navigation a:hover, a:active {
+	     background-color: #FFCCCC;
 
-	 
+	 }
 
-
-	 .image {
+	 img {
           width: 45%
           float: left;
           margin-right: 10px;
+
+				}
+		article{
 					display: flex;
 					flex-flow: row;
 					flex-wrap: wrap;
-}
-.first {
-	    magin-top: 0;
-}
+				}
