@@ -82,3 +82,11 @@ text-align:center;
        flex-flow: row;
        background-color: #FFCCCC;
    }
+
+	 .image {
+  display: flex;
+    flex-direction: row;
+  flex:1 auto;
+  order: 2;
+
+}
