@@ -110,7 +110,7 @@ header, article {
 
 	.navigation {
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .navigation a {
