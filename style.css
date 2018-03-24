@@ -7,8 +7,9 @@
 p {
 	color: #4087ad;
     font-family: 'BioRhyme Expanded', serif;
-  text-align:center;
+  /*text-align: right;*/
 }
+
 .italic {
      font-weight: bold;
 }
@@ -18,31 +19,32 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
 
 color:#4087ad;
-text-align:center;}
+
+text-align:center;
+}
 
 body{
 	background-color:#ebe3ce;
 }
 
-#container{
+/*#container{
     width: 95%;
     margin: 0 auto;
-}
+}*/
 
-.navigation{  padding: 0;
+/*#nav {  padding: 0;
 	list-style-type: none;
   display: flex;
 	flex-flow: column;
 }
-
-.navigation li {
+#nav li {
     margin: 0;
     padding: 0;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
-}
+}*/
 
-.navigation a:link, a:visited {
+#nav a:link, #nav a:visited {
 	display:block;
     color: #E8CCFF;
     background-color: #4087ad;
@@ -53,52 +55,86 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
-.navigation a:hover, a:active {
+#nav a:hover, a:active {
     background-color: #FFCCCC;
 
 }
 
-
-
+.image{
+	width: 45%;
+	margin-right: 10px;
+}
 
 
 
 img {
-	border: none;
-text-align:center;
+	width:100%;
 }
+img {
+	width: 45%;
+	object-fit: contain;
+}
+
 /*Setting up flexible boxes for our content*/
 .wrapper{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 .navigation{
+	list-style:none;
+	margin:0;
+	background:gray;
+	padding:0
 	display: flex;
 	flex-flow: column;
 
 }
+.navigation a {
+	           text-decoration: none;
+	             display:block;
+							 color:white;
+							    text-align:center;
+									padding: 10px;
+									border-bottom:1px solid black;
+}
 
+.navigation li:last-of-type a{
+	border-bottom: none;
+}
+
+header, article {
+	flex:1 100%
+	padding: 10px
+}
 /* When greater than 800px wide */
 
-	 .navigation {
-     display: flex;
-       flex-flow: row wrap;
-       justify-content: space-around;
-       flex-flow: row;
-       background-color: #4087ad;
+@media (min-width:800px) {
 
-   }
-	 .navigation a:hover, a:active {
-	     background-color: #FFCCCC;
+	.navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
 
-	 }
+    .navigation a {
+        border: none;
+    }
 
+    .navigation a:hover {
+    	background: #c0b283;
+    }
+
+		
 	 img {
-          width: 45%
-          float: left;
+          width: 50%;
+          float: right;
           margin-right: 10px;
+					margin-top: 5px;
 
 				}
+			.story {
+         width: 45%;
+     }
+
 		article{
 					display: flex;
 					flex-flow: row;
