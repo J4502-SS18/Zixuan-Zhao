@@ -168,9 +168,6 @@ width: 100%;
 					margin-top: 5px;
 
 				}
-			.story {
-         width: 45%;
-     }
 
 		article{
 					display: flex;
@@ -184,7 +181,7 @@ width: 100%;
 	 }
 
 	 .aside-2{
-	 	width: 10%;
+	 	width: 9%;
 
 	 }
 
@@ -219,6 +216,7 @@ width: 100%;
 article {
   display: grid;
   grid-template-columns: 600px 1fr 1fr 1fr;
+	grid-template-rows: 400px 1fr 1fr 1fr;
   grid-template-areas:
   "a b"
   ". c";
