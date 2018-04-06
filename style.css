@@ -65,11 +65,9 @@ body{
 
 
 
+
 img {
-	width:100%;
-}
-img {
-	width: 45%;
+	width: 50%;
 	object-fit: contain;
 }
 
@@ -104,6 +102,43 @@ header, article {
 	flex:1 100%
 	padding: 10px
 }
+
+@media (min-width:600px) {
+
+  .navigation{
+
+    	flex-flow: row;
+      justify-content: flex-end;
+  }
+
+  .navigation a {
+    border: none;
+
+  }
+.navigation a:hover {
+  background: black;
+}
+  .navigation li:last-of-type a{
+  }
+
+header{
+display: block;
+width: 100%;
+order:1;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.aside-1{
+  background:#ebe3ce;
+}
+
+
+
+
 /* When greater than 800px wide */
 
 @media (min-width:800px) {
@@ -123,7 +158,7 @@ header, article {
 
 
 	 img {
-          width: 50%;
+          width: 100%;
           float: right;
           margin-right: 10px;
 					margin-top: 5px;
@@ -138,3 +173,43 @@ header, article {
 					flex-flow: row;
 					flex-wrap: wrap;
 				}
+
+
+	  aside {
+			 flex: 0.2 auto;
+	 }
+	 .aside-1 {
+			order: 1;
+	}
+
+	article {
+			order: 2;
+	}
+
+	.aside-2 {
+			order: 3;
+	}
+
+	footer {
+			order: 4;
+	}
+
+	.image {
+  grid-area: a;
+}
+
+.story {
+  grid-area: b;
+}
+
+.pullquote {
+  grid-area: c;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b"
+  ". c";
+}
