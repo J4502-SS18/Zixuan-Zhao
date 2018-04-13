@@ -68,6 +68,7 @@ body{
     order: 1;
     font-size: 1.75em;
     width: 2em;
+		color: black
 }
 
 img {
@@ -160,7 +161,9 @@ header, article, aside, footer {
 /* When greater than 800px wide */
 
 @media (min-width:800px) {
-
+	.menu-trigger{
+		display:none;
+	}
 	.navigation {
         flex-flow: row wrap;
         justify-content: flex-end;
