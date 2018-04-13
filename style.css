@@ -64,7 +64,11 @@ body{
 }
 
 
-
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
 
 img {
 	width: 50%;
@@ -103,7 +107,22 @@ header, article {
 	padding: 10px
 }
 
+@media screen and (min-width: 450px) {
+
+		nav ul {
+				flex-flow: row;
+				justify-content: space-between;
+		}
+
+		img {
+		    width: 100%;
+		  }
+
 @media (min-width:600px) {
+
+	img {
+	    width: 100%;
+	  }
 
   .navigation{
 
@@ -131,15 +150,10 @@ width: 100%;
   flex-flow: row wrap;
 }
 
-.aside-1{
-  background:#ebe3ce;
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
 }
-
-.aside-2{
-	width: 30%;
-
-}
-
 
 
 
@@ -175,33 +189,19 @@ width: 100%;
 					flex-wrap: wrap;
 				}
 
-
-	  aside {
-			 flex: 0.2 auto;
-	 }
-
-	 .aside-2{
-	 	width: 9%;
-
-	 }
-
-	 .aside-1 {
-			order: 1;
+.image2 {
+		width: 30%
 	}
 
-	article {
-			order: 2;
-	}
+ .aside-1 {
+ order: 1;
+ }
 
-	.aside-2 {
-			order: 3;
-	}
+ .story {
+  width: 100%;
+}
 
-	footer {
-			order: 4;
-	}
-
-	.image {
+.image {
   grid-area: a;
 }
 
@@ -209,14 +209,29 @@ width: 100%;
   grid-area: b;
 }
 
-.intro {
+.image2 {
   grid-area: c;
+}
+
+aside {
+  flex: 1 auto;
+}
+
+article {
+  flex: 3 0px;
+}
+
+article {
+  order: 2;
+}
+
+footer {
+  order: 4;
 }
 
 article {
   display: grid;
-  grid-template-columns: 600px 1fr 1fr 1fr;
-	grid-template-rows: 400px 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr 1fr 1fr;
   grid-template-areas:
   "a b"
   ". c";
