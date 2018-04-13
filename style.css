@@ -5,7 +5,7 @@
 }*/
 
 p {
-	color: #4087ad;
+	color: #8e4747;
     font-family: 'Source Sans Pro', sans-serif;
   /*text-align: right;*/
 }
@@ -17,7 +17,7 @@ p {
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
-  color:#4087ad;
+  color:#8e4747;
   text-align:center;
 }
 
@@ -84,7 +84,7 @@ img {
 .navigation{
 	list-style:none;
 	margin:0;
-	background:gray;
+	background:#e0b5b5;
 	padding:0;
 	display: flex;
 	flex-flow: column;
