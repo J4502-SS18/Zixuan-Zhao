@@ -41,6 +41,21 @@ body{
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
 }*/
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 
 #nav a:link, #nav a:visited {
 	display:block;
